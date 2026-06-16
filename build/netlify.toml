@@ -1,0 +1,10 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+  functions = "netlify/functions"
+
+# SPA fallback – všechny routes vrátí index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
